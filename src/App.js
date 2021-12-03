@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="App">
-    <h1>Welcome to site</h1>
+    <h1>Welcome to tour Guide</h1>
     <Tours tours={tours}/>
     </div>
   );

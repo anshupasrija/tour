@@ -1,38 +1,41 @@
 .App {
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tour-subcontainer{
+  display:flex;
+  justify-content:space-evenly;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tour-image{
+  width:50%;
+  height:50%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.tour-paragraph{
+  width:50%;
+  height:50%;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.tour-info{
+  display:flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom:1rem;
+}
+.tour-price{
+  background-color: rgb(6, 237, 253)
+}
+.tour-button{
+  width:15rem;
+  height:3rem;
+  border-radius: 0.5rem;
+  background-color:white;
+  color:rgb(235 8 8);
+  font-size:1.2rem;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
