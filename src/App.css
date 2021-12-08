@@ -2,29 +2,17 @@
   text-align: center;
   
 }
-
-.tour-subcontainer{
-  display:flex;
-  justify-content:space-evenly;
-}
-.tour-image{
-  width:50%;
-  height:50%;
-}
-.tour-paragraph{
-  width:50%;
-  height:50%;
-  font-size: 1.2rem;
-  text-align: justify;
-}
-.tour-info{
-  display:flex;
-  flex-direction: column;
+.tour-info {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom:1rem;
+  margin-bottom: 1.5rem;
 }
-.tour-price{
-  background-color: rgb(6, 237, 253)
+.tour-price {
+  color: var(--clr-primary-5);
+  background: var(--clr-primary-10);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
 }
 .tour-button{
   width:15rem;
@@ -34,6 +22,25 @@
   color:rgb(235 8 8);
   font-size:1.2rem;
 
+}
+
+
+.single-tour button {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  color: var(--clr-primary-5);
+  font-size: 1rem;
+  cursor: pointer;
+  padding-left: 0.25rem;
+}
+.single-tour img {
+  width: 50%;
+  height: 20rem;
+  object-fit: cover;
+}
+.single-tour footer {
+  padding: 1.5rem 2rem;
 }
 
 

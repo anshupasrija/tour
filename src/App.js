@@ -10,6 +10,12 @@ function App() {
   const [loading,setLoading]= useState(true);
   const [tours, setTours]= useState([]);
 
+  const removeTour = (id) =>{
+    const newTour = tours.filter((tour)=>
+      tour.id !== id);
+      setTours(newTour);
+  }
+
   const fetchTours = ()=>{
     setLoading(true);
     axios.get(url)
@@ -37,11 +43,21 @@ function App() {
       </main>
     )
   }
+ 
+  if(tours.length === 0){
+    return (
+    <div className= "notour-container">
+     <h2> No Tour left </h2>
+    <button className="tour-price" onClick= {()=>fetchTours()}>Refresh</button>    
+    </div>
+    )
+  }
+
 
   return (
     <div className="App">
     <h1>Welcome to tour Guide</h1>
-    <Tours tours={tours}/>
+    <Tours tours={tours} removeTour= {removeTour}/>  
     </div>
   );
 }
