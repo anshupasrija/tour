@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  
+   
 }
 .tour-info {
   display: flex;
@@ -35,7 +35,7 @@
   padding-left: 0.25rem;
 }
 .single-tour img {
-  width: 100%;
+  width: 50%;
   height: 20rem;
   object-fit: cover;
 }
