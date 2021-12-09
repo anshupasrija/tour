@@ -5,12 +5,13 @@ import Tour from './Tour'
 function Tours({tours,removeTour}) {
   console.log({tours})
   return (
-    <div>
+
+    <section>
       {tours.map((tour)=>{
         return <Tour key = {tour.id}{...tour}removeTour={removeTour}></Tour>
       })}
      
-    </div>
+    </section>
   )
 }
 
